@@ -7,7 +7,7 @@
 //
 
 #import "CSRNewsViewController.h"
-//#import "CSRNewsListViewController.h"
+#import "CSRNewsNormalViewController.h"
 
 @interface CSRNewsViewController ()
 
@@ -20,10 +20,10 @@
     static UINavigationController *navi = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-//        CSRNewsViewController *vc = [[CSRNewsViewController alloc]initWithViewControllerClasses:[self viewControllerClasses] andTheirTitles:[self itemNames]];
-//        vc.keys = [self vcKeys];
-//        vc.values = [self vcValues];
-//        navi = [[UINavigationController alloc]initWithRootViewController:vc];
+        CSRNewsViewController *vc = [[CSRNewsViewController alloc]initWithViewControllerClasses:[self viewControllerClasses] andTheirTitles:[self itemNames]];
+        vc.keys = [self vcKeys];
+        vc.values = [self vcValues];
+        navi = [[UINavigationController alloc]initWithRootViewController:vc];
     });
     return navi;
 }
@@ -41,7 +41,7 @@
 + (NSArray *)vcKeys{
     NSMutableArray *arr = [NSMutableArray new];
     for (id obj in [self itemNames]) {
-        [arr addObject:@"infoType"];
+        [arr addObject:@"InfoType"];
     }
     return [arr copy];
 }
@@ -49,21 +49,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    [Factory addBackItemToVC:self];
+    self.title = @"最新资讯";
+    [Factory addMenuItemToVC:self];
 }
 
 + (NSArray *)itemNames
 {
-    return @[@"头条", @"娱乐", @"段子", @"美女", @"历史", @"科技", @"文化"];
+    return @[@"头条", @"娱乐", @"历史", @"科技", @"文化"];
 }
-//+ (NSArray *)viewControllerClasses
-//{
-//    NSMutableArray *arr = [NSMutableArray new];
-//    for (id obj in [self itemNames])
-//    {
-//        [arr addObject:[CSRNewsListViewController class]];
-//    }
-//    return [arr copy];
-//}
++ (NSArray *)viewControllerClasses
+{
+    NSMutableArray *arr = [NSMutableArray new];
+    DDLogVerbose(@"%ld", [self itemNames].count);
+    for (id obj in [self itemNames])
+    {
+        [arr addObject:[CSRNewsNormalViewController class]];
+    }
+    return [arr copy];
+}
 @end

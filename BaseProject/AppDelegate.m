@@ -47,7 +47,7 @@
 
 - (RESideMenu *)sideMenu {
     if(_sideMenu == nil) {
-        _sideMenu = [[RESideMenu alloc] initWithContentViewController:[CSRNewsViewController new] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
+        _sideMenu = [[RESideMenu alloc] initWithContentViewController:[CSRNewsViewController standardCSRNewsNavi] leftMenuViewController:[LeftViewController new] rightMenuViewController:nil];
         //为sideMenu设置背景图，
         _sideMenu.backgroundImage = [UIImage imageNamed:@"一个人"];
         //出现菜单时不显示状态栏
