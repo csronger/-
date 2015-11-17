@@ -81,6 +81,17 @@
 		859E4EDF1BF7053100C4C138 /* TRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E4EDE1BF7053100C4C138 /* TRImageView.m */; };
 		859E4EE21BF705D300C4C138 /* CSRNewsNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E4EE11BF705D300C4C138 /* CSRNewsNormalCell.m */; };
 		859E4EE51BF708D300C4C138 /* CSRNewsSlideImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E4EE41BF708D300C4C138 /* CSRNewsSlideImageCell.m */; };
+		85D236F31BF968810031CFDF /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236EF1BF968810031CFDF /* AlbumModel.m */; };
+		85D236F41BF968810031CFDF /* RankingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236F11BF968810031CFDF /* RankingListModel.m */; };
+		85D236F71BF968920031CFDF /* XiMaNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236F61BF968920031CFDF /* XiMaNetManager.m */; };
+		85D236FA1BF968B60031CFDF /* XiMaCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236F91BF968B60031CFDF /* XiMaCategoryCell.m */; };
+		85D237001BF968C60031CFDF /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236FD1BF968C60031CFDF /* MusicListViewController.m */; };
+		85D237011BF968C60031CFDF /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D236FF1BF968C60031CFDF /* RankListViewController.m */; };
+		85D237071BF968D00031CFDF /* XiMaAlbumViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D237041BF968D00031CFDF /* XiMaAlbumViewModel.m */; };
+		85D237081BF968D00031CFDF /* XiMaCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D237061BF968D00031CFDF /* XiMaCategoryViewModel.m */; };
+		85D2370D1BF96DDA0031CFDF /* MusicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D2370C1BF96DDA0031CFDF /* MusicDetailCell.m */; };
+		85D237101BF96E010031CFDF /* PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D2370F1BF96E010031CFDF /* PlayView.m */; };
+		85D237121BF96E7F0031CFDF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D237111BF96E7F0031CFDF /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +222,29 @@
 		859E4EE11BF705D300C4C138 /* CSRNewsNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRNewsNormalCell.m; sourceTree = "<group>"; };
 		859E4EE31BF708D300C4C138 /* CSRNewsSlideImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRNewsSlideImageCell.h; sourceTree = "<group>"; };
 		859E4EE41BF708D300C4C138 /* CSRNewsSlideImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRNewsSlideImageCell.m; sourceTree = "<group>"; };
+		85D236EE1BF968810031CFDF /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		85D236EF1BF968810031CFDF /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
+		85D236F01BF968810031CFDF /* RankingListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingListModel.h; sourceTree = "<group>"; };
+		85D236F11BF968810031CFDF /* RankingListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingListModel.m; sourceTree = "<group>"; };
+		85D236F21BF968810031CFDF /* XiMaLaYaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaLaYaModel.h; sourceTree = "<group>"; };
+		85D236F51BF968920031CFDF /* XiMaNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaNetManager.h; sourceTree = "<group>"; };
+		85D236F61BF968920031CFDF /* XiMaNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaNetManager.m; sourceTree = "<group>"; };
+		85D236F81BF968B60031CFDF /* XiMaCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryCell.h; sourceTree = "<group>"; };
+		85D236F91BF968B60031CFDF /* XiMaCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryCell.m; sourceTree = "<group>"; };
+		85D236FC1BF968C60031CFDF /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		85D236FD1BF968C60031CFDF /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		85D236FE1BF968C60031CFDF /* RankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankListViewController.h; sourceTree = "<group>"; };
+		85D236FF1BF968C60031CFDF /* RankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankListViewController.m; sourceTree = "<group>"; };
+		85D237031BF968D00031CFDF /* XiMaAlbumViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaAlbumViewModel.h; sourceTree = "<group>"; };
+		85D237041BF968D00031CFDF /* XiMaAlbumViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaAlbumViewModel.m; sourceTree = "<group>"; };
+		85D237051BF968D00031CFDF /* XiMaCategoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMaCategoryViewModel.h; sourceTree = "<group>"; };
+		85D237061BF968D00031CFDF /* XiMaCategoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMaCategoryViewModel.m; sourceTree = "<group>"; };
+		85D2370B1BF96DDA0031CFDF /* MusicDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDetailCell.h; sourceTree = "<group>"; };
+		85D2370C1BF96DDA0031CFDF /* MusicDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDetailCell.m; sourceTree = "<group>"; };
+		85D2370E1BF96E010031CFDF /* PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayView.h; sourceTree = "<group>"; };
+		85D2370F1BF96E010031CFDF /* PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayView.m; sourceTree = "<group>"; };
+		85D237111BF96E7F0031CFDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		85D237131BF970490031CFDF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D237121BF96E7F0031CFDF /* AVFoundation.framework in Frameworks */,
 				3885C90B1BE8EA70009441EA /* libz.tbd in Frameworks */,
 				3885C9091BE8EA6A009441EA /* libstdc++.tbd in Frameworks */,
 				3885C9071BE8EA62009441EA /* CoreTelephony.framework in Frameworks */,
@@ -454,10 +489,8 @@
 			children = (
 				3886C0BF1BD74B090014E661 /* BaseModel.h */,
 				3886C0C01BD74B090014E661 /* BaseModel.m */,
-				859E4ECB1BF6C68C00C4C138 /* CSRNewsModel.h */,
-				859E4ECC1BF6C68C00C4C138 /* CSRNewsModel.m */,
-				859E4ED11BF6D82D00C4C138 /* CSRNewsTypeModel.h */,
-				859E4ED21BF6D82D00C4C138 /* CSRNewsTypeModel.m */,
+				85D236ED1BF968810031CFDF /* 喜马拉雅 */,
+				85D236E91BF968270031CFDF /* 新闻 */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,8 +500,8 @@
 			children = (
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
-				859E4ECE1BF6CB5800C4C138 /* CSRNewsNetManager.h */,
-				859E4ECF1BF6CB5800C4C138 /* CSRNewsNetManager.m */,
+				85D2370A1BF968EC0031CFDF /* 喜马拉雅 */,
+				85D236EA1BF9683A0031CFDF /* 新闻 */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -514,10 +547,8 @@
 			children = (
 				859E4EDD1BF7053100C4C138 /* TRImageView.h */,
 				859E4EDE1BF7053100C4C138 /* TRImageView.m */,
-				859E4EE01BF705D300C4C138 /* CSRNewsNormalCell.h */,
-				859E4EE11BF705D300C4C138 /* CSRNewsNormalCell.m */,
-				859E4EE31BF708D300C4C138 /* CSRNewsSlideImageCell.h */,
-				859E4EE41BF708D300C4C138 /* CSRNewsSlideImageCell.m */,
+				85D237091BF968DF0031CFDF /* 喜马拉雅 */,
+				85D236EB1BF968480031CFDF /* 新闻 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -525,6 +556,7 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				85D236FB1BF968C60031CFDF /* 喜马拉雅 */,
 				850712571BF618EE00C02678 /* 新闻 */,
 				850712541BF6147000C02678 /* LeftViewController.h */,
 				850712551BF6147000C02678 /* LeftViewController.m */,
@@ -537,8 +569,8 @@
 			children = (
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
-				859E4ED71BF6E33000C4C138 /* CSRNewsViewModel.h */,
-				859E4ED81BF6E33000C4C138 /* CSRNewsViewModel.m */,
+				85D237021BF968D00031CFDF /* 喜马拉雅 */,
+				85D236EC1BF968530031CFDF /* 新闻 */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -571,6 +603,102 @@
 			path = WMMenuView;
 			sourceTree = "<group>";
 		};
+		85D236E91BF968270031CFDF /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				859E4ECB1BF6C68C00C4C138 /* CSRNewsModel.h */,
+				859E4ECC1BF6C68C00C4C138 /* CSRNewsModel.m */,
+				859E4ED11BF6D82D00C4C138 /* CSRNewsTypeModel.h */,
+				859E4ED21BF6D82D00C4C138 /* CSRNewsTypeModel.m */,
+			);
+			name = "新闻";
+			sourceTree = "<group>";
+		};
+		85D236EA1BF9683A0031CFDF /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				859E4ECE1BF6CB5800C4C138 /* CSRNewsNetManager.h */,
+				859E4ECF1BF6CB5800C4C138 /* CSRNewsNetManager.m */,
+			);
+			name = "新闻";
+			sourceTree = "<group>";
+		};
+		85D236EB1BF968480031CFDF /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				859E4EE01BF705D300C4C138 /* CSRNewsNormalCell.h */,
+				859E4EE11BF705D300C4C138 /* CSRNewsNormalCell.m */,
+				859E4EE31BF708D300C4C138 /* CSRNewsSlideImageCell.h */,
+				859E4EE41BF708D300C4C138 /* CSRNewsSlideImageCell.m */,
+			);
+			name = "新闻";
+			sourceTree = "<group>";
+		};
+		85D236EC1BF968530031CFDF /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				859E4ED71BF6E33000C4C138 /* CSRNewsViewModel.h */,
+				859E4ED81BF6E33000C4C138 /* CSRNewsViewModel.m */,
+			);
+			name = "新闻";
+			sourceTree = "<group>";
+		};
+		85D236ED1BF968810031CFDF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				85D236EE1BF968810031CFDF /* AlbumModel.h */,
+				85D236EF1BF968810031CFDF /* AlbumModel.m */,
+				85D236F01BF968810031CFDF /* RankingListModel.h */,
+				85D236F11BF968810031CFDF /* RankingListModel.m */,
+				85D236F21BF968810031CFDF /* XiMaLaYaModel.h */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		85D236FB1BF968C60031CFDF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				85D236FC1BF968C60031CFDF /* MusicListViewController.h */,
+				85D236FD1BF968C60031CFDF /* MusicListViewController.m */,
+				85D236FE1BF968C60031CFDF /* RankListViewController.h */,
+				85D236FF1BF968C60031CFDF /* RankListViewController.m */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		85D237021BF968D00031CFDF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				85D237031BF968D00031CFDF /* XiMaAlbumViewModel.h */,
+				85D237041BF968D00031CFDF /* XiMaAlbumViewModel.m */,
+				85D237051BF968D00031CFDF /* XiMaCategoryViewModel.h */,
+				85D237061BF968D00031CFDF /* XiMaCategoryViewModel.m */,
+			);
+			path = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		85D237091BF968DF0031CFDF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				85D2370B1BF96DDA0031CFDF /* MusicDetailCell.h */,
+				85D2370C1BF96DDA0031CFDF /* MusicDetailCell.m */,
+				85D236F81BF968B60031CFDF /* XiMaCategoryCell.h */,
+				85D236F91BF968B60031CFDF /* XiMaCategoryCell.m */,
+				85D2370E1BF96E010031CFDF /* PlayView.h */,
+				85D2370F1BF96E010031CFDF /* PlayView.m */,
+			);
+			name = "喜马拉雅";
+			sourceTree = "<group>";
+		};
+		85D2370A1BF968EC0031CFDF /* 喜马拉雅 */ = {
+			isa = PBXGroup;
+			children = (
+				85D236F51BF968920031CFDF /* XiMaNetManager.h */,
+				85D236F61BF968920031CFDF /* XiMaNetManager.m */,
+			);
+			name = "喜马拉雅";
+			sourceTree = "<group>";
+		};
 		DEB62B47C560AA65E07ECFA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +711,8 @@
 		FA3445AEA3874C1D4FE61EAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85D237131BF970490031CFDF /* AVKit.framework */,
+				85D237111BF96E7F0031CFDF /* AVFoundation.framework */,
 				3885C90A1BE8EA70009441EA /* libz.tbd */,
 				3885C9081BE8EA6A009441EA /* libstdc++.tbd */,
 				3885C9061BE8EA62009441EA /* CoreTelephony.framework */,
@@ -744,21 +874,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D236FA1BF968B60031CFDF /* XiMaCategoryCell.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				85D237081BF968D00031CFDF /* XiMaCategoryViewModel.m in Sources */,
+				85D237001BF968C60031CFDF /* MusicListViewController.m in Sources */,
 				850712741BF61D1900C02678 /* WMPageController.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
+				85D236F41BF968810031CFDF /* RankingListModel.m in Sources */,
 				859E4EE51BF708D300C4C138 /* CSRNewsSlideImageCell.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
+				85D2370D1BF96DDA0031CFDF /* MusicDetailCell.m in Sources */,
 				859E4ECD1BF6C68C00C4C138 /* CSRNewsModel.m in Sources */,
+				85D237011BF968C60031CFDF /* RankListViewController.m in Sources */,
 				850712801BF61D3300C02678 /* WMMenuItem.m in Sources */,
+				85D237101BF96E010031CFDF /* PlayView.m in Sources */,
 				859E4ED91BF6E33000C4C138 /* CSRNewsViewModel.m in Sources */,
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
+				85D237071BF968D00031CFDF /* XiMaAlbumViewModel.m in Sources */,
 				850712821BF61D3300C02678 /* WMProgressView.m in Sources */,
 				850712881BF620BC00C02678 /* Factory.m in Sources */,
 				859E4EDC1BF6E7D900C4C138 /* CSRNewsNormalViewController.m in Sources */,
 				859E4EE21BF705D300C4C138 /* CSRNewsNormalCell.m in Sources */,
 				850712811BF61D3300C02678 /* WMMenuView.m in Sources */,
+				85D236F31BF968810031CFDF /* AlbumModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
@@ -768,6 +907,7 @@
 				8580BE6D1BF7266D002D4B6B /* CSRNewsHtmlViewController.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
+				85D236F71BF968920031CFDF /* XiMaNetManager.m in Sources */,
 				850712561BF6147000C02678 /* LeftViewController.m in Sources */,
 				8507125A1BF6190A00C02678 /* CSRNewsViewController.m in Sources */,
 				859E4ED01BF6CB5800C4C138 /* CSRNewsNetManager.m in Sources */,
@@ -887,6 +1027,7 @@
 			baseConfigurationReference = 4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -912,6 +1053,7 @@
 			baseConfigurationReference = DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",

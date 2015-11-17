@@ -33,4 +33,17 @@
 - (BOOL)isNowForRow:(NSInteger)row;
 /** 点击某行后要跳转页面的url */
 - (NSURL *)commentsUrlForRow:(NSInteger)row;
+
+//头部滚动视图
+@property (nonatomic, strong)NSMutableArray *newsArr;
+/** 滚动展示栏的图片 */
+- (NSURL *)iconURLForRowInIndexPic:(NSInteger)row;
+/** 滚动展示栏的文字 */
+- (NSString *)titleForRowInIndexPic:(NSInteger)row;
+/** 滚动展示栏的图片数量 */
+@property(nonatomic) NSInteger indexPicNumber;
+/** 获取展示栏中某行数据对应的html5链接 */
+- (NSURL *)detailURLForRowInIndexPic:(NSInteger)row;
+
+@property (nonatomic, strong)CSRNewsModel *allModel;
 @end
