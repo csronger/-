@@ -9,6 +9,12 @@
 #import "CSRNewsViewModel.h"
 
 @implementation CSRNewsViewModel
+- (NSMutableArray *)normalArr {
+    if(_normalArr == nil) {
+        _normalArr = [[NSMutableArray alloc] init];
+    }
+    return _normalArr;
+}
 - (NSMutableArray *)newsArr {
     if(_newsArr == nil) {
         _newsArr = [[NSMutableArray alloc] init];
@@ -41,10 +47,19 @@
 
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle
 {
-    self.dataTask = [CSRNewsNetManager getNewsInfoWithType:self.type completionHandle:^(CSRNewsModel *model, NSError *error) {
-        [self.dataArr addObjectsFromArray:model.item];
-        self.allModel = model;
-            //[self.newsArr addObjectsFromArray:model.item];
+    self.dataTask = [CSRNewsNetManager getNewsInfoWithType:self.type completionHandle:^(NSArray *model, NSError *error) {
+        CSRNewsModel *model1 = model.firstObject;
+        CSRNewsModel *model2 = model.lastObject;
+        [self.dataArr addObjectsFromArray:model1.item];
+        [self.newsArr addObjectsFromArray:model2.item];
+//        if ([self.dataArr[0].type isEqualToString:@"focus"])
+//        {
+//            [self.newsArr addObjectsFromArray:model.item];
+//            
+//        }else
+//        {
+//            [self.normalArr addObjectsFromArray:model.item];
+//        }
         completionHandle(error);
     }];
 }
@@ -57,14 +72,6 @@
     return arr[row];
 }
 
-- (NSArray *)modelType
-{
-        if ([self.allModel.type isEqualToString:@"focus"])
-        {
-            return self.allModel.item;
-        }
-    return self.allModel.item;
-}
 /** 返回某行的图片 */
 - (NSURL *)thumbNailForRow:(NSInteger)row
 {
@@ -114,24 +121,24 @@
 /** 滚动展示栏的图片 */
 - (NSURL *)iconURLForRowInIndexPic:(NSInteger)row
 {
-    CSRNewsItemModel *model = [self modelType][row];
+    CSRNewsItemModel *model = [self modelForArr:self.newsArr row:row];
     return [NSURL URLWithString:model.thumbnail];
 }
 /** 滚动展示栏的文字 */
 - (NSString *)titleForRowInIndexPic:(NSInteger)row
 {
-    CSRNewsItemModel *model = [self modelType][row];
+    CSRNewsItemModel *model = [self modelForArr:self.newsArr row:row];
     return model.title;
 }
 /** 滚动展示栏的图片数量 */
 - (NSInteger)indexPicNumber
 {
-    return [self modelType].count;
+    return self.newsArr.count;
 }
 /** 获取展示栏中某行数据对应的html5链接 */
 - (NSURL *)detailURLForRowInIndexPic:(NSInteger)row
 {
-    CSRNewsItemModel *model = [self modelType][row];
+    CSRNewsItemModel *model = [self modelForArr:self.newsArr row:row];
     return [NSURL URLWithString:model.commentsUrl];
 }
 @end

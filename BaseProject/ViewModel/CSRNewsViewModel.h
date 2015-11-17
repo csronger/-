@@ -45,5 +45,7 @@
 /** 获取展示栏中某行数据对应的html5链接 */
 - (NSURL *)detailURLForRowInIndexPic:(NSInteger)row;
 
-@property (nonatomic, strong)CSRNewsModel *allModel;
+@property (nonatomic, strong)NSMutableArray *normalArr;
+
+
 @end

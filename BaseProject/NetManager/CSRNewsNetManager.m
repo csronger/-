@@ -61,7 +61,7 @@
         }
     }
     return [self GET:kNewsPath parameters:params completionHandler:^(id responseObj, NSError *error) {
-        completionHandle([CSRNewsModel objectArrayWithKeyValuesArray:responseObj].firstObject, error);
+        completionHandle([CSRNewsModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }
 @end

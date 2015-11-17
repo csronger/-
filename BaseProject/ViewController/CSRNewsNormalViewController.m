@@ -73,8 +73,8 @@
     _pageControl.hidesForSinglePage = YES;
     //如果只有一张图，不可以滚动
     _ic.scrollEnabled = self.newsVM.indexPicNumber != 1;
-    _pageControl.pageIndicatorTintColor = [UIColor redColor];
-    _pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    _pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    _pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     if (self.newsVM.indexPicNumber > 1)
     {
         _timer = [NSTimer bk_scheduledTimerWithTimeInterval:3 block:^(NSTimer *timer) {
@@ -153,7 +153,7 @@ kRemoveCellSeparator
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.newsVM hasSlideForRow:indexPath.row]?120:100;
+    return [self.newsVM hasSlideForRow:indexPath.row]?150:100;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

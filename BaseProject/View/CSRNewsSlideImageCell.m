@@ -65,10 +65,9 @@
             make.top.mas_equalTo(5);
         }];
         [self.commentsAllLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(5);
-            make.right.mas_equalTo(-10);
-            make.width.mas_lessThanOrEqualTo(70);
-            make.width.mas_greaterThanOrEqualTo(40);
+            make.centerY.mas_equalTo(_titleLb.mas_centerY).mas_equalTo(0);
+            make.right.mas_equalTo(10);
+            make.width.mas_equalTo(70);
         }];
         [self.iconIV0 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(88);

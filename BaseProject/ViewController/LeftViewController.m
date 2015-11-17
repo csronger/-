@@ -57,7 +57,7 @@
     cell.accessoryType = 1;
     cell.textLabel.text = self.itemNames[indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = kRGBColor(20, 218, 240);
     return cell;
 }
 kRemoveCellSeparator
